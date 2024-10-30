@@ -1,0 +1,62 @@
+// Buttons
+.btn {
+    font-size: 1em;
+    font-weight: 600;
+    line-height: 1.5;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: $btn-shadow-one;
+    text-shadow: none;
+    outline: none;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        outline: none;
+        box-shadow: none;
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 8px 14px;
+    }
+}
+
+// Btn White
+.btn-white {
+    color: $white-clr;
+    background-color: $white-rgba-015;
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: $white-dark-65;
+    }
+}
+
+// Btn Main
+.btn-main {
+    color: $clr-101828;
+    background-color: $clr-FFDF87;
+    &:hover,
+    &:focus {
+        color: $clr-101828;
+        background-color: $FFDF87-dark-10;
+    }
+}
+
+// Btn Link
+.btn-link {
+    color: $clr-FFDF87;
+    background-color: $clr-333333;
+    &:hover,
+    &:focus {
+        color: $FFDF87-dark-10;
+        background-color: darken($clr-333333, 2%);
+    }
+}

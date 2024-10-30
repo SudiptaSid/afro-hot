@@ -1,0 +1,23 @@
+// Static Page One
+.static-page-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    video {
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+// Contact One
+.contact-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+}

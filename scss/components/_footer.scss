@@ -1,0 +1,26 @@
+// Main Footer
+.main-footer {
+    background-color: $black-rgba-5;
+    padding: 2em 0;
+    font-size: $fz-13;
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px 10px;
+        li {
+            + li {
+                border-left: 1px solid $white-rgba-4;
+                padding-left: 10px;
+            }
+        }
+    }
+    small {
+        display: block;
+        margin: 1em 0;
+    }
+    p {
+        font-size: $fz-12;
+        margin-bottom: 0;
+        margin-top: 1em;
+    }
+}

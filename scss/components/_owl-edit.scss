@@ -1,0 +1,53 @@
+// Login Slider
+.login-slider {
+    .owl-nav {
+        max-width: 280px;
+        margin: 45px auto 0;
+        position: relative;
+        z-index: 9;
+        [class*="owl-"] {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            &.owl-prev,
+            &.owl-next {
+                color: $white-clr;
+                background-color: $no-clr;
+                font-size: 1.5em;
+                line-height: 1;
+                &:hover {
+                }
+            }
+            &.owl-prev {
+                left: 0;
+            }
+            &.owl-next {
+                right: 0;
+            }
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        .owl-dot {
+            line-height: 1;
+            span {
+                margin: 0;
+                display: inline-block;
+                border: none;
+                width: 10px;
+                height: 10px;
+            }
+            &:hover,
+            &.active {
+                span {
+                }
+            }
+            + .owl-dot {
+                margin-left: 10px;
+            }
+        }
+    }
+}

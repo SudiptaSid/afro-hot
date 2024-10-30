@@ -1,0 +1,263 @@
+// Advance Search modal
+#advanceSearchModal {
+    .form-inline {
+        justify-content: space-between;
+        .select2 {
+            width: calc(50% - 5px) !important;
+        }
+    }
+    .select2 {
+        width: 100% !important;
+    }
+}
+
+// Newsletter Modal
+#newsletterModal {
+    .form-inline {
+        .select2 {
+            max-width: 240px;
+            width: 100% !important;
+        }
+        button {
+            background-color: $no-clr;
+            color: $white-clr;
+            border: none;
+            cursor: pointer;
+        }
+    }
+}
+
+// Phone Modal
+#phoneModal {
+    .modal-body {
+        h4 {
+            font-size: 1.4em;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+                img {
+                    width: 30px;
+                }
+            }
+        }
+    }
+}
+
+// Ask Question
+#askQuestionModal {
+    .modal-body {
+        p {
+            margin-bottom: 0px;
+            span {
+                color: $clr-FFDF87;
+            }
+        }
+    }
+}
+
+// Write Review
+#writeReviewModal {
+    .modal-body {
+        p {
+            margin-bottom: 0px;
+            span {
+                color: $clr-FFDF87;
+            }
+        }
+        label {
+            display: block;
+        }
+    }
+}
+
+// Escort List One
+.escort-list-one {
+    padding-bottom: 3em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding-bottom: 2em;
+    }
+    .left-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .escort-items {
+            @include item-list;
+            flex-wrap: wrap;
+            flex-direction: unset;
+            li {
+                width:100%;
+                flex-grow:1;
+            }
+        }
+    }
+    .right-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .heading-two {
+            border-bottom: 1px solid $white-rgba-4;
+            padding-bottom: 1em;
+        }
+        .escort-items {
+            @include item-list;
+            li {
+                &:last-child {
+                    border-bottom: 1px solid $white-rgba-4;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+}
+
+// Escort Details
+.escort-details-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .left-sec {
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            overflow-x: scroll;
+        }
+        .escort-gallery {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                min-width:max-content;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+            }
+            li {
+                position: relative;
+                width: calc(50% - 7px);
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    width: auto;
+                }
+                img {
+                    height: 300px;
+                    @include img-lightbox;
+                }
+                .verify {
+                    @include verified;
+                }
+            }
+        }
+    }
+    .right-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em 0;
+        .description {
+            p {
+                word-wrap: break-word;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .up-down {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em 2em;
+            div {
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                i {
+                    font-size: 3em;
+                }
+                p {
+                    margin-bottom: 0;
+                    span {
+                        color: $clr-999999;
+                    }
+                }
+            }
+        }
+        .more-info {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li {
+                width: calc(50% - 20px);
+                border-bottom: 1px solid $white-rgba-4;
+                padding: 4px 0;
+                display: flex;
+                justify-content: space-between;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    width: 100%;
+                }
+                &:last-child {
+                    border-bottom: none;
+                }
+                span {
+                    &:first-child {
+                        color: $clr-999999;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .review-list {
+            @include item-list;
+        }
+        .question-list {
+            @include item-list;
+        }
+        .report-profile {
+            a {
+                span {
+                    color: $clr-333333;
+                }
+            }
+        }
+    }
+}
+
+// Review Details One
+.review-details-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .review-by {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-bottom: 2em;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-bottom: 1em;
+        }
+    }
+    .review-list {
+        @include item-list;
+    }
+    .escort-items {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 1em;
+        .bookmark-escort-one {
+            width: 30%;
+        }
+    }
+}

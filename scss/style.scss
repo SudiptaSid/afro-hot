@@ -1,0 +1,57 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+// Font Awesome
+@import "../plugins/font-awesome/scss/font-awesome.scss";
+
+// Line Icon
+@import "../plugins/lineicons/scss/lineicons.scss";
+
+// Flag Icon
+@import "../plugins/flag-icons/sass/flag-icon.scss";
+
+// Bootstrap
+@import "../plugins/bootstrap/scss/bootstrap.scss";
+
+// Select Two
+@import "../plugins/select2/scss/core.scss";
+
+// Jquery UI
+@import "../plugins/jquery-ui/jquery-ui.css";
+
+// Owl Carousel
+@import "../plugins/owl-carousel/scss/owl.carousel.scss";
+@import "../plugins/owl-carousel/scss/owl.theme.default.scss";
+
+// Star Rating
+@import "../plugins/star_rating/star_rating.scss";
+
+// Lightbox
+@import "../plugins/lightbox/gallery.scss";
+
+// Components
+@import "components/variables";
+@import "components/mixins";
+@import "components/gap";
+@import "components/reset";
+@import "components/plugin-edit";
+@import "components/buttons";
+@import "components/form";
+@import "components/box";
+@import "components/owl-edit";
+@import "components/components";
+@import "components/heading";
+@import "components/header";
+@import "components/footer";
+
+// Pages
+@import "pages/login";
+@import "pages/home";
+@import "pages/privacy";
+@import "pages/escort";
+@import "pages/profile";
+@import "pages/account";
+@import "pages/static";
+
+// New Edits
+@import "pages/new-one";

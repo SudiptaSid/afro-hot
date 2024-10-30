@@ -1,0 +1,85 @@
+// Bootstrap */
+.container-fluid {
+    max-width: 1330px;
+
+    // Max 991px
+    @media (max-width: $break-991) {
+        max-width: 100%;
+    }
+}
+
+/* Jquery Ui */
+.ui-tooltip {
+    font-size: $fz-12;
+    color: $white-clr;
+    background-color: $clr-101828;
+}
+
+// Select Two
+.select2-container {
+    // Selection
+    .custom-select2 {
+        font-size: 1em;
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 14px;
+        background-color: $white-rgba-015;
+        border-radius: 4px;
+        box-shadow: $btn-shadow-one;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            padding: 8px 14px;
+        }
+        &:focus {
+            color: $clr-101828;
+            background-color: $white-clr;
+            box-shadow: none;
+        }
+        span.select2-selection__rendered {
+            display: flex;
+            align-items: center;
+            padding: 0;
+            gap: 0.5em;
+        }
+        &.select2-selection--multiple {
+            &:focus {
+                color: $clr-101828;
+                background-color: $white-clr;
+                box-shadow: none;
+            }
+            .select2-search {
+                .select2-search__field {
+                    margin: 0;
+                    background-color: $no-clr;
+                }
+            }
+            ul.select2-selection__rendered {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5em;
+                .select2-selection__choice {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    font-weight: 600;
+                    gap: 0.5em;
+                    color: $clr-101828;
+                    background-color: $clr-FFDF87;
+                    padding: 2px 6px;
+                    border-radius: 20px;
+                    button {
+                        border: none;
+                        padding: 0;
+                        background-color: $no-clr;
+                    }
+                }
+            }
+        }
+    }
+    // Dropdown
+    .custom-dropdown2 {
+    }
+}

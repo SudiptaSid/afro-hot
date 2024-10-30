@@ -1,0 +1,129 @@
+// Verified Sing
+@mixin verified {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    color: $clr-101828;
+    background-color: $clr-FFDF87;
+    background: linear-gradient(to top right,$clr-FFDF87 1%,$clr-FFDF87 50%,transparent 51%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+    transition: all .25s ease-in-out;
+    overflow: hidden;
+    span {
+        font-size: 0.8em;
+        font-weight: 700;
+        margin-left: 0.5em;
+        display: inline-block;
+        visibility: hidden;
+        white-space: nowrap;
+    }
+    &:hover  {
+        width:120px;
+        background-color: $clr-FFDF87;
+        background: linear-gradient(to top right,$clr-FFDF87,$clr-FFDF87);
+        span {
+            visibility: visible;
+        }
+    }
+}
+
+@mixin verified-small {
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 70%;
+}
+
+// Icon Badge One
+@mixin icon-badge-one {
+    font-size: 70%;
+    background-color: $white-rgba-015;
+    padding: 4px 10px;
+    border-radius: 30px;
+}
+
+// Escort Title One
+@mixin escort-title-one {
+    font-size: 1.5em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    a {
+        color: $clr-FFDF87;
+        &:hover {
+            color: $FFDF87-dark-10;
+        }
+    }
+    span {
+        @include icon-badge-one;
+    }
+}
+
+// Escort Item Image
+@mixin escort-img-one {
+    a {
+        display: block;
+        position: relative;
+        img {
+            width: 100%;
+            border: 1px solid $white-clr;
+        }
+        >span {
+            @include verified;
+        }
+    }
+}
+
+// Img Lightbox
+@mixin img-lightbox {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid $white-clr;
+}
+
+// Reply Bubble
+@mixin reply-bubble {
+    p {
+        margin-bottom: 0;
+    }
+    .bubble-block {
+        color: #c2c2c2;
+        padding: 5px 10px;
+        margin: 0 0 0 20px;
+        display: inline-block;
+        position: relative;
+        border-radius: 10px;
+        background: $black-rgba-4;
+        &:before {
+            content: "\f0d9";
+            font-family: "FontAwesome";
+            font-size: 1.5em;
+            color: $black-rgba-4;
+            position: absolute;
+            left: -7px;
+            top: 0;
+        }
+    }
+}
+
+// Item List
+@mixin item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    li {
+        + li {
+            border-top: 1px solid $white-rgba-4;
+            padding-top: 1em;
+        }
+    }
+}

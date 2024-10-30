@@ -1,0 +1,28 @@
+// Home One
+.home-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+        gap: 1em;
+        margin: 1em 0;
+        .countrySelect {
+            width: calc(100% - 80px);
+        }
+    }
+}
+
+// Home Two
+.home-two {
+    padding-bottom: 3em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding-bottom: 2em;
+    }
+}

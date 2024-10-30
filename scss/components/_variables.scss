@@ -1,0 +1,46 @@
+// Base
+$fz-14: 14px;
+$fz-13: 13px;
+$fz-12: 12px;
+$ff-inter: "Inter", sans-serif;
+
+// Colors
+$no-clr: transparent;
+$white-clr: #ffffff;
+$black-clr: #000000;
+$clr-101828: #101828;
+$clr-333333: #333333;
+$clr-999999: #999999;
+$clr-C2C2C2: #c2c2c2;
+$clr-D0D5DD: #d0d5dd;
+$clr-FFFF00: #ffff00;
+
+// Main Color
+$clr-FFDF87: #ffdf87;
+$clr-007BFF: #007bff;
+
+// Media Sizes
+$break-1300: 1300px;
+$break-1280: 1280px;
+$break-1080: 1080px;
+$break-991: 991px;
+$break-767: 767px;
+
+/*
+@media (max-width: $break-767) {}
+*/
+
+// Background Color
+$white-rgba-05: rgba($white-clr, 0.05);
+$white-rgba-015: rgba($white-clr, 0.15);
+$white-rgba-4: rgba($white-clr, 0.4);
+$black-rgba-015: rgba($black-clr, 0.15);
+$black-rgba-4: rgba($black-clr, 0.4);
+$black-rgba-5: rgba($black-clr, 0.5);
+$white-dark-65: darken($white-clr, 65%);
+$white-dark-30: darken($white-clr, 30%);
+$FFDF87-dark-10: darken($clr-FFDF87, 10%);
+
+// Shadow
+$btn-shadow-one: inset 0 1px 0 $white-rgba-015, 0 2px 2px $black-rgba-5;
+$btn-shadow-two: inset 0 -2px 0 $black-rgba-015, inset 0 2px 2px $black-rgba-5;

@@ -1,0 +1,87 @@
+// Account One
+.account-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .heading-one {
+        // Max 767px
+        @media (max-width: $break-767) {
+            margin-bottom: 1em;
+        }
+    }
+    .btn-links {
+        display: flex;
+        flex-wrap: wrap;
+
+        // Max 767px
+        @media (max-width: $break-767) {
+            gap: 0.2em;
+        }
+        li {
+            // Max 767px
+            @media (max-width: $break-767) {
+                flex-grow: 1;
+            }
+            .btn {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                min-width: 200px;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    width: 100%;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+            + li {
+                .btn {
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+
+                    // Max 767px
+                    @media (max-width: $break-767) {
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                    }
+                }
+            }
+            &:last-child {
+                .btn {
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+// Account Two
+.account-two {
+    padding-bottom: 3em;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding-bottom: 3em;
+    }
+    .img-upload {
+        max-width: 150px;
+    }
+    small {
+        display: block;
+        margin: 0.5em;
+    }
+}
+
+// About Me One
+.about-me-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+}

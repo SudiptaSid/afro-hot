@@ -1,0 +1,187 @@
+// Profile One
+.profile-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .select-profile {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+    .ad-box {
+        margin-top: 1em;
+    }
+    .my-stat {
+        font-size: 1.4em;
+    }
+}
+
+// Profile Two
+.profile-two {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .form-group {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .select2 {
+        min-width: 100px;
+    }
+    .add-title {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5em 1em;
+        .custom-select,
+        .countrySelect,
+        .form-control {
+            width: 28%;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 100%;
+            }
+        }
+        .divider {
+            font-size: 1.5em;
+            font-weight: 600;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                display: none;
+            }
+        }
+    }
+    .uploaded-image {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-bottom: 1em;
+        li {
+            width: 100%;
+            max-width: 150px;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                max-width: 100px;
+            }
+        }
+    }
+    .phone-group {
+        .select2 {
+            width: auto !important;
+        }
+    }
+    .price-group {
+        .checkbox-one {
+            min-width: 180px;
+        }
+        .select2 {
+            width: auto !important;
+        }
+    }
+    .language-group {
+        .select2 {
+            min-width: 180px;
+            width: auto !important;
+        }
+    }
+    .form-inline {
+        gap: 1em;
+        align-items: unset;
+        label {
+            justify-content: flex-start;
+        }
+        .form-control {
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 65%;
+            }
+        }
+        .check-social-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5em;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 100%;
+            }
+        }
+    }
+    .check-service-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        li {
+            width: 24%;
+
+            // Max 767px
+            @media (max-width: $break-767) {
+                width: 48%;
+            }
+        }
+    }
+}
+
+// Statistics One
+.statistics-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .select-profile {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+    .my-stat {
+        font-size: 1.2em;
+    }
+}
+
+// Upgrade One
+.upgrade-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+}
+
+// Checkout One
+.checkout-one {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .heading-one {
+        .btn-main {
+            font-size: $fz-14;
+        }
+    }
+    .input-group {
+        .input-group-text {
+            color: $white-clr;
+            border: none;
+            background-color: $white-rgba-4;
+        }
+        .form-control {
+            flex: none;
+            width: auto;
+        }
+    }
+}

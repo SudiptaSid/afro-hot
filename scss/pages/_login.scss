@@ -1,0 +1,85 @@
+// Login
+.login-page {
+    padding: 3em 0;
+
+    // Max 767px
+    @media (max-width: $break-767) {
+        padding: 2em 0;
+    }
+    .extra-links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2em;
+        .btn {
+            display: block;
+            text-align: left;
+        }
+    }
+    .left-sec {
+        max-width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .forgot-sec {
+            .checkbox-one {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .right-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .register-type {
+            display: flex;
+            justify-content: space-between;
+            .register-option {
+                padding: 0 3em;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                // Max 767px
+                @media (max-width: $break-767) {
+                    padding: 0 1em;
+                }
+                + .register-option {
+                    border-left: 1px solid $white-rgba-4;
+                }
+                img {
+                    height: 115px;
+                }
+                p {
+                    max-width: 140px;
+                    margin: 1em 0;
+                    display: inline-block;
+                    text-align: center;
+                }
+                .btn {
+                    span {
+                        span {
+                            // Max 767px
+                            @media (max-width: $break-767) {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .center-sec {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        .form-inline {
+            margin-bottom: 0;
+            justify-content: space-between;
+            .form-control {
+                width: calc(100% - 80px);
+            }
+        }
+    }
+}
