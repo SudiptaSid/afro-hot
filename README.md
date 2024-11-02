@@ -1,4 +1,4 @@
 # Afro Hot
 **GitHub Link** <br>
-<a href="https://sudiptasid.github.io/afro-hot/">Link</a>
+<a href="https://sudiptasid.github.io/afro-hot/">Site Link</a>
  
